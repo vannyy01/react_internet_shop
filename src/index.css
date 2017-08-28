@@ -1,0 +1,142 @@
+@font-face {
+    font-family: 'basket_icon';
+    src: url('./SVG/basket.svg#bassket_icon') format('svg');
+}
+
+@font-face {
+    font-family: 'icomoon';
+    src: url('./fonts/icomoon.svg#icomoon') format('svg'),
+    url('./fonts/icomoon.woff') format('woff');
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.product {
+    box-sizing: border-box;
+    display: flex;
+
+}
+
+.wrapper {
+    align-items: center;
+    box-sizing: border-box;
+    display: flex;
+    height: 70px;
+    line-height: 70px;
+
+}
+
+.head-element {
+    box-sizing: border-box;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    height: 70px;
+    line-height: 70px;
+    width: 90%;
+}
+
+.bag {
+    margin-top: -67px;
+    width: 10%;
+    box-sizing: border-box;
+    display: flex;
+    position: relative;
+    font-size: 18px;
+    height: 70px;
+    line-height: 70px;
+}
+
+.basket {
+    display: block;
+    box-sizing: border-box;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: normal;
+    cursor: pointer;
+    position: relative;
+    text-transform: none;
+    speak: none;
+    justify-content: space-between;
+}
+
+.basket:before {
+    font-family: 'icomoon';
+    content: "\e900";
+    font-size: 36px;
+}
+
+.buyers {
+    display: none;
+    margin-left: -350px;
+    background: #f3f3f3;
+    height: 200px;
+    -moz-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+#bill {
+    flex-direction: row;
+    margin-top: -15px;
+    margin-left: 20px;
+    font-size: 16px;
+}
+
+.basket:hover .buyers {
+    cursor: auto;
+    display: block;
+    padding: 10px;
+    position: absolute;
+    top: 60px;
+    z-index: 9999;
+    width: 400px;
+
+}
+
+.buyer-wrapper {
+    width: 80%;
+    height: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.name {
+    width: 30%;
+    font-size: 12px;
+
+}
+
+#amount {
+    font-size: 14px;
+    color: goldenrod;
+    flex-direction: ;
+}
+
+.goods {
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+}
+
+.goods img {
+    width: 300px;
+    height: 200px;
+}
+
+div[id*=item] {
+    width: 30%;
+}
+
+div[id*=info] {
+    color: chocolate;
+    display: none;
+}
